@@ -1,0 +1,18 @@
+{
+  "name": "Auth0",
+  "version": "0.0.1",
+  "description": "A test plugin to use Swift code for Auth0 Login",
+  "cordova": {
+    "id": "cordova-plugin-auth0",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "auth0",
+    "cordova-ios",
+  ],
+  "author": "P", // Your name
+  "license": "MIT"
+}

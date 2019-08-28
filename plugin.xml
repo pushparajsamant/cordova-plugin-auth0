@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-auth0" version="0.0.1"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Auth0</name>
+
+    <js-module name="Auth0" src="www/Auth0.js">
+        <clobbers target="Auth0" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+
+            <feature name="Auth0">
+                <param name="ios-package" value="Auth0" />
+            </feature>
+
+        </config-file>
+        <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="Auth0" spec="~> 1.13" />Ó
+            </pods>
+        </podspec>
+        <!-- Add in the plugin .h files here -->
+        <source-file src="src/ios/Auth0.h" />
+        <source-file src="src/ios/Auth0.m" />
+
+        <!-- Add in the swift-support plugin by default -->
+        <dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
+        <dependency id="cordova-plugin-cordova-plugin-safariviewcontroller" version="1.6.0"/>
+    </platform>
+</plugin>

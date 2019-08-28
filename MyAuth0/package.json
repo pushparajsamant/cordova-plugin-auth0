@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-myAuth0",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-myAuth0",
+    "platforms": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushparajsamant/cordova-plugin-auth0.git"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Pushparaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pushparajsamant/cordova-plugin-auth0/issues"
+  },
+  "homepage": "https://github.com/pushparajsamant/cordova-plugin-auth0#readme"
+}

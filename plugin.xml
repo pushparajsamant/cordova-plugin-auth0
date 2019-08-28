@@ -21,13 +21,15 @@
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="Auth0" spec="~> 1.13" />Ó
+                <pod name="Auth0" spec="~> 1.13" />
+                <pod name="SimpleKeychain" spec="~> 0.7" />
             </pods>
         </podspec>
         <!-- Add in the plugin .h files here -->
         <source-file src="src/ios/Auth0.h" />
         <source-file src="src/ios/Auth0.m" />
-
+        <source-file src="src/ios/HybridAuth.swift" />
+        <source-file src="src/ios/nib-Briding-Header.h" />
         <!-- Add in the swift-support plugin by default -->
         <dependency id="cordova-plugin-add-swift-support" version="1.7.2"/>
         <dependency id="cordova-plugin-cordova-plugin-safariviewcontroller" version="1.6.0"/>
